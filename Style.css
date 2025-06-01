@@ -45,7 +45,7 @@ main{
 .title{
     position: relative;
     grid-column: 1/-1;
-    place-self: center;
+    place-self:  end center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,6 +63,18 @@ position: absolute;
   font-size: 27vw;
   color: #ff0;
   z-index: -1;
+}
+.description{
+    background-color: aliceblue;
+    grid-column: 1/7;
+    color: var(--secundary-color);
+    flex-direction: column;
+}
+.description__title{
+    font-size: 4rem;
+}
+.description__text{
+    font-size:1.5rem;
 }
 .action{
     background-color: blanchedalmond;
