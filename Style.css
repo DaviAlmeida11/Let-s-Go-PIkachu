@@ -14,7 +14,7 @@ body {
     background-color: var(--primare-color);
     display: flex;
     flex-direction: column;
-
+   font-family: 'Righteous';
     
 }
 .container{
@@ -36,10 +36,37 @@ header a {
     text-decoration: none;
     color: #8E4106;
     font-size: 2rem;
+  
 }
 main{
-    background-color: aqua;
     flex-grow: 1 ;
+  
+}
+.title{
+    position: relative;
+    grid-column: 1/-1;
+    place-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title__text{
+    font-size: 20vw;
+    color: white;
+
+}
+.title__transparente{
+position: absolute;
+  top: -50%;
+  font-size: 27vw;
+  color: #ff0;
+  z-index: -1;
+}
+.action{
+    background-color: blanchedalmond;
+    grid-column: 7/-1;
 }
 footer{
     background-color: aliceblue;
